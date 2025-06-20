@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Guide - Aprende la Técnica</title>
+    <link rel="icon" href="favicon.ico" />
+    <!-- Google Fonts: Ejemplo con 'Montserrat' y 'Roboto' -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER: Logo y navegación principal -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- Logo del sitio -->
+        <a href="index.html" class="logo">
+          <i class="fas fa-dumbbell"></i>
+          <span>Fit Guide - Ejercicios Correctos</span>
+        </a>
+        <!-- Menú de navegación principal -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Inicio</a></li>
+            <li>
+              <a href="assets/pages/gimnasio.html" class="nav__link"
+                >Gimnasio</a
+              >
+            </li>
+            <li>
+              <a href="assets/pages/calistenia.html" class="nav__link"
+                >Calistenia</a
+              >
+            </li>
+            <li>
+              <a href="assets/pages/casa.html" class="nav__link"
+                >Ejercicios en Casa</a
+              >
+            </li>
+            <li>
+              <a href="assets/pages/contacto.html" class="nav__link"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO: Sección principal de bienvenida -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1>Aprende la técnica correcta para tus ejercicios</h1>
+          <p>
+            Descubre videos y consejos para entrenar de forma segura y efectiva
+            en el gimnasio, en casa o con calistenia.
+          </p>
+          <a href="#videos" class="btn btn--primary">Ver Videos</a>
+        </div>
+        <!-- Placeholder para imagen principal/hero -->
+        <div class="hero__img">
+          <!-- Imagen ilustrativa (placeholder) -->
+          <img src="assets/img/hero_img.jpg" alt="Entrenamiento correcto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Beneficios o características -->
+    <section class="benefits">
+      <div class="container benefits__container">
+        <!-- Tarjeta 1 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <div class="benefit-card__content">
+            <h3>Entrenamiento Seguro</h3>
+            <p>Aprende la postura y técnica adecuada para evitar lesiones.</p>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="benefit-card__content">
+            <h3>Videos Explicativos</h3>
+            <p>Accede a videos detallados para cada tipo de ejercicio.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <i class="fas fa-house"></i>
+          </div>
+          <div class="benefit-card__content">
+            <h3>Entrena Donde Quieras</h3>
+            <p>Rutinas para gimnasio, casa o al aire libre.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Videos destacados (YouTube y local) -->
+    <section class="videos" id="videos">
+      <div class="container videos__container">
+        <h2>Videos Destacados</h2>
+        <div class="videos__grid">
+          <!-- Placeholder para video local (sin audio, máximo 3MB) -->
+          <div class="video-card">
+            <video
+              controls
+              muted
+              poster="assets/video/video_local.mp4"
+              class="video-card__video"
+            >
+              <source src="assets/video/video_local.mp4" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+            <a href="assets/pages/casa.html" class="video-card__text"
+              >Video local: Ejercicios en casa</a
+            >
+          </div>
+          <div class="video-card">
+            <iframe
+              class="video-card__iframe"
+              src="https://www.youtube.com/embed/qsAkuNORgmk"
+              title="Video YouTube 1"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <a href="assets/pages/gimnasio.html" class="video-card__text"
+              >Técnica correcta de la sentadilla en el gimnasio</a
+            >
+          </div>
+          <div class="video-card">
+            <iframe
+              class="video-card__iframe"
+              src="https://www.youtube.com/embed/yHuiTeCG4AM"
+              title="Video YouTube 2"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <a href="assets/pages/calistenia.html" class="video-card__text"
+              >Como sacar más pullups - calistenia</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Mapa de ubicación (Google Maps) -->
+    <section class="map-section">
+      <div class="container map-section__container">
+        <h2>Encuentra nuestro gimnasio aliado</h2>
+        <!-- Placeholder para mapa de Google Maps -->
+        <div class="map-section__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.8740422813914!2d-77.05320018875038!3d-12.060846159518647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c96e99d59343%3A0xa2377e6fc9765cdd!2sHuancabamba%201242%2C%20Bre%C3%B1a%2015083!5e0!3m2!1ses-419!2spe!4v1750391233781!5m2!1ses-419!2spe"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: Formulario de contacto -->
+    <section class="contact-section">
+      <div class="container contact-section__container">
+        <h2>Contáctanos</h2>
+        <form class="contact-form" action="#" method="post" autocomplete="off">
+          <!-- Campo Nombre -->
+          <div class="form-group">
+            <label for="nombre">Nombre <span>*</span></label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+          <!-- Campo Email -->
+          <div class="form-group">
+            <label for="email">Correo electrónico <span>*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <!-- Campo Mensaje -->
+          <div class="form-group">
+            <label for="mensaje">Mensaje <span>*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn--primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER: Información y enlaces secundarios -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__info">
+          <p>
+            &copy; 2025 Ejercicios Correctos. Todos los derechos reservados.
+          </p>
+        </div>
+        <div class="footer__social">
+          <!-- Íconos sociales de ejemplo -->
+          <a href="#" class="footer__social-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="footer__social-link"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
